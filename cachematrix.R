@@ -9,9 +9,10 @@ makeCacheMatrix <- function(x = matrix()) {
     x <<- y
     inv <<- NULL
   }
-  get <- function() x
-  setInverse <- function(inverse) inv <<- inverse
-  getInverse <- function() inv
+  get <- function() x  ## define the get fucntion - returns value of the matrix argument
+  
+  setInverse <- function(inverse) inv <<- inverse  ## assigns value of inv in parent environment
+  getInverse <- function() inv     ## gets the value of inv where called
   list(set = set,
        get = get,
        setInverse = setInverse,
