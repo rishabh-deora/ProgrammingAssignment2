@@ -36,3 +36,15 @@ cacheSolve <- function(x, ...) {
   x$setInverse(inv)
   inv
 }
+
+## The solution :
+
+## source("cachematrix.R")
+## my_matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
+## now we get the matrix by my_matrix$get()
+## matrix is shown
+
+##then
+
+## my_matrix$getInverse()  gives NULL
+##cacheSolve(my_matrix)   inverse the matrix and shows the result
